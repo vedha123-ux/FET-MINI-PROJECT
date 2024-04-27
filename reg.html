@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color:lightblue;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: lightcoral;
+            padding: 20px;
+            border-radius: 8px;        
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<form  action="succ.html">
+  <h1>Language Registration Form</h1>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" pattern="^[a-zA-Z]+(?: [a-zA-Z]+)*$" title="Name should only contain letters" required>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" pattern="^[^\d]\w*@\w+\.\w+" title="Please enter a valid email address" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" title="Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="language">Language Course:</label>
+    <select id="language" name="language" required>
+        <option value="select">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+    </select>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" pattern="^[a-zA-Z]+(?: [a-zA-Z]+)*$" title="state should only contain letters" required>
+
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" pattern="^[6-9]\d{9}$" title="Please enter a valid phone number starting with 6, 7, 8, or 9 and with 10 digits" required>
+
+    <div class="error-message" id="error-message"></div>
+
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var gender = document.getElementById('gender').value;
+        var language = document.getElementById('language').value;
+        var state = document.getElementById('state').value;
+        var phone = document.getElementById('phone').value;
+
+        var errorMessage = document.getElementById('error-message');
+        if (/^\d/.test(name)) {
+            errorMessage.textContent = "Name should not start with a number";
+            return;
+        }
+
+       
+        if (!/^[^\d]\w*@\w+\.\w+$/.test(email)) {
+            errorMessage.textContent = "Please enter a valid email address";
+            return;
+        }
+
+        if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/.test(password)) {
+            errorMessage.textContent = "Password must contain at least 8 characters, including one uppercase letter, one lowercase letter, one number, and one special character";
+            return;
+        }
+    }
+</script>
+
+</body>
+</html>
+
