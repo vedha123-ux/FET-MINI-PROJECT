@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language Courses</title>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.language-course {
+  margin-bottom: 40px;
+}
+
+.course-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.course-info img {
+  max-width: 100%;
+}
+
+.course-info p {
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-info p::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.course-info p::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.course-info p:hover::before {
+  animation: noise-anim-2 5s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(85px, 9999px, 124px, 0);
+  }
+  5% {
+    clip: rect(79px, 9999px, 22px, 0);
+  }
+  10% {
+    clip: rect(2px, 9999px, 32px, 0);
+  }
+  15% {
+    clip: rect(79px, 9999px, 32px, 0);
+  }
+  20% {
+    clip: rect(1px, 9999px, 13px, 0);
+  }
+  25% {
+    clip: rect(51px, 9999px, 7px, 0);
+  }
+  30% {
+    clip: rect(47px, 9999px, 90px, 0);
+  }
+  35% {
+    clip: rect(46px, 9999px, 32px, 0);
+  }
+  40% {
+    clip: rect(84px, 9999px, 67px, 0);
+  }
+  45% {
+    clip: rect(27px, 9999px, 54px, 0);
+  }
+  50% {
+    clip: rect(5px, 9999px, 50px, 0);
+  }
+  55% {
+    clip: rect(58px, 9999px, 41px, 0);
+  }
+  60% {
+    clip: rect(93px, 9999px, 38px, 0);
+  }
+  65% {
+    clip: rect(90px, 9999px, 98px, 0);
+  }
+  70% {
+    clip: rect(93px, 9999px, 19px, 0);
+  }
+  75% {
+    clip: rect(43px, 9999px, 28px, 0);
+  }
+  80% {
+    clip: rect(82px, 9999px, 90px, 0);
+  }
+  85% {
+    clip: rect(96px, 9999px, 24px, 0);
+  }
+  90% {
+    clip: rect(22px, 9999px, 82px, 0);
+  }
+  95% {
+    clip: rect(43px, 9999px, 27px, 0);
+  }
+  100% {
+    clip: rect(7px, 9999px, 95px, 0);
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Language Courses</h1>
+  </header>
+  <main>
+    <section class="language-course">
+      <h2>English</h2>
+      <div class="course-info">
+        <img src="images/depositphotos_71121903-stock-photo-education-concept-english-in-grunge.jpg" alt="English">
+        <p>Description: English is still one of the best languages to learn as it is the official dialect of significant countries such as New Zealand, Australia, the United Kingdom, and the United States of America. More than 1.5 billion people use English at school, work, and travel. 
+  One of the best language programs today is English Express by Edunation, providing engaging courses to upgrade your speaking, writing, reading, and listening skills using the universal language. Aside from its affordable price, you will enjoy an immersive learning environment with exceptional professional instructors.</p>
+ <a href="https://www.youtube.com/watch?v=CbPy_CjJR90&list=PL2IkMHFHWdEqi0jiLXTEakULNDXGc-q_B">English Full Video Learning Playlist</a>
+ <a href="https://www.oxfordonlineenglish.com/english-level-test/grammar">Test Here</a>
+      </div>
+    </section>
+   
+    <section class="language-course">
+      <h2>Korean</h2>
+      <div class="course-info">
+        <img src="images/study-korean-language-online-2d-illustration-professional-teacher-and-student-flat-first-view-hand-on-cartoon-background-course-colourful-editable-scene-for-mobile-website-presentation-vector.jpg" alt="French">
+        <p>Description: With its booming economy and global influence in entertainment, technology, lifestyle, and more, Korean is one of the best languages to learn in 2024. Generally, it is ideal to grasp, as it is one of the most sensible globally. 
+          The Korean Language, Culture, and Business Immersion Program is perfect for those planning to learn the language and study in the country. You will genuinely love studying in Seoul as it offers an immersive and modern environment.</p>
+          <a href="https://www.youtube.com/watch?v=sx0yyQqkpqo&list=PLbFrQnW0BNMUkAFj4MjYauXBPtO3I9O_k">Korean Playlist</a>
+        <a href="https://www.ef.com/wwen/test/korean/">Test Your Korean Language</a>
+
+      </div>
+    </section>
+    <section class="language-course">
+        <h2>Mandarin Chinese</h2>
+        <div class="course-info">
+          <img src="images/chinese_alphabet_522bdf9ab2.png" alt="Chinenese">
+          <p>Description: Among the best languages to learn is Mandarin, used by 199 million as their second language and 918 as their primary. China’s economy is the best globally, and opportunities in the country are vast for professional growth.
+ Studying in China is also advantageous as it has renowned learning institutions. One of the best is Shanghai University, which has impressive positions in the East Asia University, Asia University rankings, and more. Shanghai University offers the China Studies Program, which includes exciting lessons in the Chinese language, culture, economy, business, and more.</p>
+        <a href="https://www.youtube.com/watch?v=McZW0iDsZns&list=PLWXyZU_NJb_chvMZ13hgOPB3Vcz7xhW3q">Chinese PlayList</a>
+        <a href="https://www.sporcle.com/games/subcategory/chinese">Chinenese</a>
+        </div>
+      </section>
+      <section class="language-course">
+        <h2>Japanese</h2>
+        <div class="course-info">
+          <img src="images/download.png" alt="Japanese">
+          <p>Description: One hundred twenty-eight million speak Japanese, and the country is open to career and study opportunities. International students looking for the best universities in the country must consider the Tokyo – Ecampus by Undiknas University. Aside from its strategic location in the heart of Tokyo, you get to join a welcoming community and choose from educational fields in Business, Law, Management, or entrepreneurship. 
+              Japanese is among the best languages to learn, as the country is open to qualified international workers who want to provide services to the nation’s best companies. </p>
+        <a href="https://www.youtube.com/watch?v=6p9Il_j0zjc">Japanese PlayList</a>
+         <a href="https://japanko-official.com/quizzes-and-games/">Japanese</a>
+        </div>
+      </section>
+
+
+      <section class="language-course">
+        <h2>French</h2>
+        <div class="course-info">
+          <img src="images/images.png" alt="Japanese">
+          <p>Description:Learning French is ideal for those who want to widen their network, whether for personal or career opportunities. It is the official language in 29 countries, offering high possibilities for professional growth. 
+             Studying in France and getting familiar with “one of the best languages to learn in 2024” is achievable by enrolling in the country. ESME School of Engineering, located in Paris, France, is an excellent choice for international students, as it has in-demand programs concentrating on technology and engineering.  </p>
+        <a href="https://www.youtube.com/playlist?list=PLKemiRG53ou5Ax0fPcLW8FavBWN5ie77J">French PlayList</a>
+        <a href="https://www.3ponts.edu/french-tests/basic-french-test/">French</a>
+        </div>
+      </section>
+      
+    
+  </main>
+</body>
+</html>
